@@ -1,0 +1,48 @@
+.wishlist__container {
+    width: 90%;
+    margin: 3rem auto;
+    margin-bottom: 5rem;
+    h2{
+        @include large-font;
+        margin: 1rem 0;
+        text-align: center;
+        color: var(--color-primary);
+    }
+}
+
+
+// --- 상품 목록 그리드 ---
+.wishlist__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include tablet {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.empty-wish {
+    @include flex-layout(column);
+    height: 500px;
+    gap: 0.5rem;
+    .mark-icon {
+        font-size: 5rem;
+        color: var(--color-gray);
+        margin-bottom: 2rem;
+    }
+    button {
+        padding: 1rem 2rem;
+        background-color: var(--color-btn);
+        color: var(--color-sub);
+        @include bold-font;
+        border: none;
+        border-radius: 0.5rem;
+        &:hover {
+            filter: brightness(1.2);
+        }
+    }
+}

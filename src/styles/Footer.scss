@@ -1,0 +1,117 @@
+footer {
+    padding: 1rem 2.5rem;
+    background-color: var(--color-white);
+}
+
+.top-text {
+    @include flex-layout(row, space-around, center);
+    @include base-font;
+    margin-bottom: 0.5rem;
+    p{
+        &:nth-of-type(2){
+            @include bold-font;
+        }
+        a{
+            transition: all 0.3s;
+        }
+    }
+}
+.top-text>p>a:hover{
+    @include bold-font;
+}
+
+.icon {
+    @include flex-layout(row, center, center);
+    gap: 2rem;
+
+    p {
+        background-color: var(--color-gray);
+        @include flex-layout();
+        color: #fff;
+        padding: 0.5rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+ul {
+    @include tablet{
+    @include flex-layout(row,space-between,center);
+    display: flex;
+    }
+}
+
+.middle-text {
+    @include base-font;
+    color: var(--color-dark);
+
+    h2 {
+        color: var(--color-black);
+        @include large-font;
+    }
+
+    @include tablet {
+        .middle-text {
+            @include large-font;
+
+            h2 {
+                @include bold-font;
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.bottom-text {
+    margin-top: 2rem;
+
+    >p {
+        @include base-font;
+        color: var(--color-dark);
+    }
+
+    @include tablet {
+        align-items: flex-end;
+
+    }
+}
+
+.foot-text {
+    @include flex-layout(row, center, center);
+    @include base-font;
+
+
+    img {
+        margin: 1rem 2rem;
+        width: 100px;
+        object-fit: cover;
+    }
+
+}
+
+.icon {
+    @include flex-layout(row, center, center);
+    gap: 2rem;
+    &:hover {
+        color: var(--color-primary);
+    }
+    p {
+        background-color: var(--color-gray);
+        @include flex-layout();
+        color: #fff;
+        padding: 0.5rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--color-primary);
+        }
+    }
+}

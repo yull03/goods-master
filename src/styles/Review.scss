@@ -1,0 +1,104 @@
+
+#review-wrap {
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.review-title {
+    @include flex-layout(row,space-between);
+    margin: 1rem;
+        h2{
+            @include large-font;
+            color: var(--color-primary);
+        }
+        p{
+            @include base-font;
+            color: var(--color-gray);
+            cursor: pointer;
+             &:hover {
+        color: $color-primary;
+      }
+        }
+}
+
+.review-all-list {
+@include flex-layout(row,space-around,flex-start);
+        gap: 2rem;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // 3열
+}
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr); // 4열로 변경
+    }
+    }
+
+    .review-wrap{
+        margin: 1rem 0;
+    }
+
+.review-main {
+    @include flex-layout(column, center, flex-start);
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        background-color: var(--color-gray);
+        border-radius: 0.5rem;
+    }
+
+    span {
+        color: #ffeb51;
+    }
+
+    .reviewtxt {
+        color: var(--color-black);
+        @include bold-font;
+    }
+
+    .reviewsub {
+        @include base-font;
+        color: var(--color-dark);
+        word-break: keep-all;
+    }
+}
+
+.price {
+    width: 100%;
+    margin: 1rem 0;
+    a {
+        width: 100%;
+        @include flex-layout(row,space-between,center);
+
+        img {
+            background-color: var(--color-gray);
+            border-radius: 6px;
+            width: 95px;
+            height: 95px;
+
+            @include desktop {
+                width: 110px;
+                height: 110px;
+                padding-left: 0;
+            }
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+            flex-grow: 1;
+            @include base-font;
+
+            .small-text {
+                padding: 0.5rem 0;
+                @include small-font;
+                color: var(--color-dark);
+            }
+            .price-text{
+                @include bold-font;
+            }
+        }
+    }
+}

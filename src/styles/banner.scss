@@ -1,0 +1,78 @@
+.banner-wrapper {
+  position: relative;
+  height: 687px;
+  margin: 0 auto;
+  .slick-slide img {
+    height: 687px;
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// 하단 인덱스 + 화살표 컨테이너
+.slide-controls {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 50%;
+  transform: translateX(+50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .arrow-button {
+    border: none;
+    background-color:var(--color-gray);
+    color: var(--color-white);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  .index-text {
+    background-color:var(--color-gray);
+    color: var(--color-white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+  }
+}
+//재생 일시정지 버튼
+.top-controls {
+  position: absolute;
+  top: 0.75rem;
+  right: 2rem;
+  transform: translateX(+50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .play-pause-button {
+    border: none;
+    text-align: center;
+    background-color:var(--color-gray);
+    color: var(--color-white);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+@include tablet{
+    .slide-controls{
+        right: 2rem;
+        transform: translateX(0);
+    }
+}

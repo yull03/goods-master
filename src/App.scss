@@ -1,0 +1,22 @@
+@import './styles/font.scss';
+@import './styles/mixin.scss';
+@import './styles/global.scss';
+
+//컴포넌트별 scss
+
+@import './styles/header.scss';
+@import './styles/banner.scss';
+@import './styles/dailyrecord.scss';
+@import './styles/drcard.scss';
+@import "./styles/Review.scss";
+@import './styles/category.scss';
+@import './styles/cartpage.scss';
+@import './styles/Footer.scss';
+@import './styles/login.scss';
+@import './styles/mypagemobile.scss';
+@import './styles/mypagetd.scss';
+@import './styles/wishlist.scss';
+@import './styles/searchpage.scss';
+@import './styles/promotion.scss';
+@import './styles/ItemPage.scss';
+@import './styles/msearch.scss';

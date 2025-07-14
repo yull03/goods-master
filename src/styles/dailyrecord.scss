@@ -1,0 +1,24 @@
+#daily-record{
+    width: 90%;
+    margin: 3rem auto;
+    .title{
+        margin: 1rem;
+        @include flex-layout(row,space-between);
+        h2{
+            @include large-font;
+            color: var(--color-primary);
+        }
+        p{
+            @include base-font;
+            color: var(--color-gray);
+            cursor: pointer;
+             &:hover {
+        color: $color-primary;
+      }
+        }
+    }
+    .daily-wrap{
+        @include flex-layout(row,space-around);
+        gap: 2rem;
+    }
+}

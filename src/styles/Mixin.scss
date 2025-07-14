@@ -1,0 +1,49 @@
+// Color styles
+$color-primary: #6495ED;
+$color-sub: #DCEEF2;
+$color-button: #191970;
+$color-font: #222222;
+$color-card: #CCCCCC;
+$color-gray: #C2C8D2;
+$color-dark-gray: #666666;
+$color-white: #F6F9FF;
+
+
+@mixin large-font{
+    font-family: "Gowun Batang", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+@mixin base-font{
+    font-family: "Gowun Batang", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+@mixin bold-font{
+    font-family: "Gowun Batang", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+@mixin small-font{
+    font-family: "Gowun Batang", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+@mixin flex-layout($direction:row, $justify:center, $align:center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//반응형 믹스인
+@mixin tablet{
+    @media screen and (min-width:768px) {
+        @content;
+    }
+}
+@mixin desktop{
+    @media screen and (min-width: 1440px){
+        @content;
+    }
+}

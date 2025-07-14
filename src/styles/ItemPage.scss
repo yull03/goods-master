@@ -1,0 +1,320 @@
+#items {
+  width: 95%;
+  margin: 0 auto;
+  @include flex-layout(column-reverse);
+
+  .banner-tablet {
+    display: none;
+  }
+
+  .right {
+    width: 100%;
+    .banner-mobile {
+      width: 100%;
+      margin-bottom: 3rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.text-top {
+  @include flex-layout(row, space-between, center);
+  @include base-font;
+  width: 100%;
+  padding: 0.5rem 0;
+
+  .color-blk {
+    @include bold-font;
+    color: var(--color-dark);
+  }
+.item-bookmark-icon {
+  font-size: 2rem;
+  margin-left: auto;
+  color: var(--color-primary);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-btn);
+  }
+}
+}
+
+.item-text {
+  @include bold-font;
+
+  h2 {
+    @include large-font;
+    word-break: keep-all;
+  }
+
+  .review-text{
+      @include base-font;
+      .color-primary{
+        color: var(--color-primary);
+      }
+    }
+  p {
+    @include large-font;
+    &:nth-of-type(2) {
+      @include base-font;
+      color: var(--color-dark);
+    }
+    &:nth-of-type(3) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+
+  .row {
+    width: 100%;
+    @include flex-layout(row, flex-start, flex-start);
+    gap: 1rem;
+  }
+
+  .label {
+    width: 130px; // 너비 고정해서 정렬 안정적으로
+    font-weight: 500;
+    color: #333;
+    flex-shrink: 0;
+  }
+
+  .value {
+    color: var(--color-dark);
+    line-height: 1.5;
+  }
+
+  .highlight-red {
+    color: #ff4e4e;
+    font-weight: bold;
+  }
+
+  .highlight-blue {
+    color: cornflowerblue;
+    font-weight: bold;
+  }
+}
+
+.count {
+  @include flex-layout(row, space-between, center);
+  p {
+    @include bold-font;
+    font-size: 1.2rem;
+  }
+}
+.counter {
+  @include flex-layout;
+  @include bold-font;
+  button {
+    border: none;
+    outline: none;
+    @include bold-font;
+    background-color: #fff;
+    padding: 1rem;
+  }
+}
+.btn-wrap {
+  width: 100%;
+  .price-box {
+    @include base-font;
+    @include flex-layout(row, space-between);
+    color: var(--color-black);
+    border: 2px solid var(--color-btn);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    text-align: right;
+    width: 100%;
+    .price-info {
+      width: 100%;
+    }
+    span {
+      @include bold-font;
+      padding: 1rem;
+    }
+  }
+  .btn-cart {
+    @include flex-layout;
+    gap: 0.5rem;
+    width: 100%;
+    button {
+      flex: 1;
+      @include bold-font;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s;
+    }
+    button:nth-child(1) {
+      color: var(--color-dark);
+      background-color: #fff;
+      border: 2px solid var(--color-btn);
+    }
+    button:nth-child(2) {
+      background-color: var(--color-btn);
+      color: var(--color-white);
+    }
+    button:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+.left {
+  margin-top: 2rem;
+  .content-list {
+    @include base-font;
+    @include flex-layout(row, space-around, center);
+    border-bottom: 1px solid var(--color-primary);
+    padding: 1rem;
+    li {
+      padding: 0.3rem 1rem;
+      cursor: pointer;
+    }
+    li:hover {
+      @include bold-font;
+      color: var(--color-primary);
+      padding: 0rem 1rem;
+    }
+  }
+}
+
+.qna-list {
+  @include base-font;
+  @include flex-layout(column);
+  display: block;
+  margin-bottom: 3rem;
+  button {
+    background-color: transparent;
+  }
+  h1 {
+    padding: 3rem;
+    text-align: center;
+  }
+  .Qmenu-list {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+
+    .Qmenu-header {
+      @include bold-font;
+      @include flex-layout(row, space-between);
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #f8f8f8;
+      }
+    }
+
+    .Qmenu-content {
+      @include flex-layout(column, flex-start, flex-start);
+      padding-left: 1rem;
+      margin-top: 0.5rem;
+      color: #555;
+
+      li {
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+.Qmenu-content li::before {
+  content: "•";
+  margin-right: 0.5rem;
+  color: #999;
+}
+
+.detail {
+  width: 100%;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+//*********************************
+
+@include tablet {
+  #items {
+    @include flex-layout(row, space-between, stretch);
+    gap: 2rem;
+    overflow: visible;
+
+    .left {
+      flex: 2;
+      .banner-tablet {
+        display: block;
+        width: 100%;
+        img {
+          width: 100%;
+          object-fit: cover;
+          padding: 1rem;
+        }
+      }
+    }
+
+    .right {
+      margin: 0 auto;
+      @include flex-layout(column, stretch, flex-start);
+      gap: 2rem;
+      align-items: flex-start;
+      overflow: visible;
+      flex: 1;
+
+      .banner-mobile {
+        display: none;
+      }
+
+      .banner-tablet {
+        flex: 1.5;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .tablet-layout {
+        position: sticky;
+        top: 5rem;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 2rem;
+        @include flex-layout(column, stretch, flex-start);
+        background-color: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        align-self: flex-start;
+        z-index: 100;
+
+        .price-info {
+          .row {
+            .label {
+              width: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .right {
+    .tablet-layout {
+      .price-info {
+        width: 100%;
+        .row {
+          width: 100%;
+          .label {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

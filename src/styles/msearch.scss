@@ -1,0 +1,84 @@
+.search-modal {
+    height: 90vh;
+    position: relative;
+    inset: 0;
+    z-index: 10;
+    padding: 2rem 1.5rem;
+
+    .close {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: $color-dark-gray;
+        transition: color 0.2s;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    h1 {
+        @include large-font;
+        margin: 4rem 0 2rem 0;
+        color: $color-primary;
+    }
+
+    .input-row {
+        @include flex-layout(row, center, center);
+        border-bottom: 2px solid $color-gray;
+        margin-bottom: 1.5rem;
+        input {
+            flex: 1;
+            border: none;
+            font-size: 1.2rem;
+            color: $color-font;
+            padding: 1rem 0;
+            background: transparent;
+            &::placeholder {
+                font-size: 1.2rem;
+                color: $color-dark-gray;
+                @include bold-font;
+            }
+
+            &:focus {
+                outline: none;
+                border-color: $color-primary;
+            }
+        }
+        .icon {
+            margin-left: 0.5rem;
+            color: $color-primary;
+            cursor: pointer;
+        }
+    }
+
+    .suggest {
+        margin-top: 1.5rem;
+        .label {
+            color: $color-dark-gray;
+            margin-bottom: 0.7rem;
+            @include bold-font;
+        }
+        .tags {
+            @include flex-layout(row, flex-start, center);
+            flex-wrap: wrap;
+            gap: 1rem;
+            .tag {
+                background: $color-white;
+                border: 1px solid $color-card;
+                border-radius: 1.5rem;
+                padding: 0.5rem 1.1rem;
+                color: $color-font;
+                @include base-font;
+                transition: background 0.2s, color 0.2s;
+                cursor: pointer;
+                &:hover {
+                    background: $color-primary;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}

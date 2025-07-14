@@ -1,0 +1,201 @@
+.login-wrap {
+  @include flex-layout(column, center, center);
+  // height: 80vh;
+  gap: 1rem;
+
+  .login-box {
+    @include flex-layout(column, center, center);
+    gap: 1rem;
+    @include tablet {
+      max-width: 500px;
+      padding: 2rem 2rem;
+    }
+    @include desktop {
+      max-width: 600px;
+      padding: 3rem 3rem;
+    }
+
+    img {
+      margin-bottom: 1.5rem;
+      width: 100px;
+      cursor: pointer;
+    }
+
+    h1 {
+      @include large-font;
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      @include large-font;
+      color: var(--color-gray);
+      margin-bottom: 3rem;
+    }
+
+    input {
+      width: 350px;
+      height: 65px;
+      padding: 0 1rem;
+      margin: 0.5rem 0;
+      border: 1px solid var(--color-gray);
+      border-radius: 20px;
+      @include base-font;
+      color: var(--color-btn);
+      &:focus {
+        outline: none;
+        border-color: var(--color-btn);
+      }
+    }
+    
+    .login-btn {
+      width: 350px;
+      height: 65px;
+      padding: 0 1rem;
+      margin: 2rem 0;
+      background-color: var(--color-btn);
+      border-radius: 20px;
+      @include base-font;
+      color: var(--color-sub);
+      &:hover {
+        filter: brightness(1.2);
+      }
+    }
+    
+    .find-wrap {
+            @include flex-layout(row, center, center);
+            gap: 1rem;
+            margin: 1rem 0;
+            p {
+                @include base-font;
+                color: var(--color-dark);
+                cursor: pointer;
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    
+    .join-btn {
+      width: 350px;
+      height: 65px;
+      padding: 0 1rem;
+      margin: 2rem 0;
+      border: 1px solid var(--color-btn);
+      border-radius: 20px;
+      @include base-font;
+      color: var(--color-btn);
+      background-color: #fff;
+      transition: all 0.5s ease;
+      &:hover {
+        background-color: var(--color-btn);
+        color: var(--color-sub);
+      }
+    }
+    
+    input,
+    .login-btn,
+    .join-btn {
+      width: 350px;
+      transition: width 0.3s ease;
+
+      @include tablet {
+        width: 500px;
+      }
+
+      @include desktop {
+        width: 550px;
+      }
+    }
+    
+    .icon-wrap {
+      display: flex;
+      gap: 1.2rem;
+      justify-content: center;
+      @include tablet {
+        gap: 1.5rem;
+      }
+
+      @include desktop {
+        gap: 2rem;
+      }
+      
+      .icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        @include flex-layout(row, center, center);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        @include tablet {
+          width: 60px;
+          height: 60px;
+        }
+        @include desktop {
+          width: 70px;
+          height: 70px;
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      
+      svg {
+        transition: width 0.3s ease;
+      }
+      
+      .apple {
+        background-color: var(--color-black);
+        color: var(--color-white);
+        svg {
+          width: 28px;
+          height: 30px;
+          @include tablet {
+            width: 32px;
+            height: 34px;
+          }
+          @include desktop {
+            width: 36px;
+            height: 38px;
+          }
+        }
+      }
+
+      
+      .naver {
+        background-color: #00c63b;
+        color: var(--color-white);
+        
+        svg {
+          width: 20px;
+          height: 20px;
+          @include tablet {
+            width: 24px;
+            height: 24px;
+          }
+          @include desktop {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+
+      .kakao {
+        background-color: #ffeb00;
+        color: var(--color-black);
+        
+        svg {
+          width: 35px;
+          height: 35px;
+          @include tablet {
+            width: 39px;
+            height: 39px;
+          }
+          @include desktop {
+            width: 43px;
+            height: 43px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "setID": "set01",
+        "setTitle": "곰작가 베스트 컬렉션",
+        "setSubtitle": "귀여운 곰으로 일상을 채워보세요",
+        "image": "/images/memo-4.jpg",
+        "products": [
+            {
+                "productID": "01",
+                "name": "포근한 곰 일러스트 카드",
+                "price": 3000,
+                "image": "/images/card-1.jpg",
+                "brand": "곰작가",
+                "count": 234
+            },
+            {
+                "productID": "02",
+                "name": "곰 키링 1",
+                "price": 3000,
+                "image": "/images/keyring-6.jpg",
+                "brand": "곰작가",
+                "count": 432
+            }
+        ]
+    },
+    {
+        "setID": "set02",
+        "setTitle": "산리오 인기 캐릭터 세트",
+        "setSubtitle": "마이멜로디부터 쿠로미까지 한눈에!",
+        "image": "/images/keyring-30.jpg",
+        "products": [
+            {
+                "productID": "03",
+                "name": "마이멜로디 수납함",
+                "price": 4900,
+                "image": "/images/living-5.jpg",
+                "brand": "Sanrio",
+                "count": 568
+            },
+            {
+                "productID": "04",
+                "name": "쿠로미 수납함",
+                "price": 4900,
+                "image": "/images/living-12.jpg",
+                "brand": "Sanrio",
+                "count": 1854
+            }
+        ]
+    },
+    {
+        "setID": "set03",
+        "setTitle": "POP MART 스페셜 키링",
+        "setSubtitle": "개성 있는 캐릭터를 담은 POP MART 키링 모음",
+          "image": "/images/keyring-13.jpg",
+        "products": [
+            {
+                "productID": "05",
+                "name": "라부부 더 몬스터즈 키링",
+                "price": 419000,
+                "image": "/images/keyring-12.jpg",
+                "brand": "POP MART",
+                "count": 1890
+            },
+            {
+                "productID": "06",
+                "name": "라부부 코카콜라 키링",
+                "price": 149000,
+                "image": "/images/keyring-46.jpg",
+                "brand": "POP MART",
+                "count": 678
+            }
+        ]
+    }
+]

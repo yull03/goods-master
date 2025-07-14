@@ -1,0 +1,412 @@
+#author-promotion-section {
+  // 기본 모바일 스타일
+  width: 90%;
+    margin: 3rem auto;
+
+  .section-header {
+    @include flex-layout(row, space-between, center);
+    margin: 1rem;
+
+    h2 {
+       @include large-font;
+            color: var(--color-primary);
+    }
+
+    .more-link {
+      @include base-font;
+      color: $color-gray;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .main-brand-badge {
+    display: inline-block;
+    background: #fff;
+    color: $color-font;
+    @include base-font();
+    padding: 7px 18px 6px 16px;
+    border-radius: 49px;
+    box-shadow: 0 2px 8px rgba(50, 60, 90, 0.13);
+    margin-bottom: 14px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    align-self: flex-start;
+    width: auto !important;
+    min-width: 0;
+  }
+
+  // === 모바일 기본 ===
+  .mobile-promotion {
+    display: block;
+
+    .mobile-promo-set {
+      margin-bottom: 30px;
+
+      .promo-main {
+        margin-bottom: 15px;
+        border-radius: 12px;
+        overflow: hidden;
+        background: $color-card;
+        position: relative;
+
+        .main-img-box {
+          width: 100%;
+          aspect-ratio: 4/3;
+          position: relative;
+          background: $color-card;
+
+          .main-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .main-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 17px 13px 12px 13px;
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+          color: $color-white;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          height: 100%;
+
+          .main-title {
+            @include large-font;
+            font-size: 1.09rem;
+            margin-bottom: 3px;
+          }
+
+          .main-subtitle {
+            @include base-font;
+            color: rgba($color-white, 0.94);
+          }
+        }
+      }
+
+      .mobile-side-cards {
+        .mobile-row {
+          display: flex;
+          gap: 9px;
+
+          .product-card {
+            flex: 1;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px 0 rgba(60, 90, 170, 0.04);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+
+            .prod-img-wrap {
+              width: 100%;
+              aspect-ratio: 1/1;
+              position: relative;
+              background: $color-card;
+
+              .prod-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .prod-info {
+              padding: 10px 5px 12px 8px;
+
+              .prod-brand {
+                @include small-font;
+                color: $color-gray;
+                margin-bottom: 1px;
+                font-weight: 900;
+              }
+
+              .prod-name {
+                color: $color-font;
+                @include base-font;
+                margin-bottom: 4px;
+              }
+
+              .prod-price {
+                color: $color-font;
+                @include base-font;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tablet-promotion,
+  .desktop-promotion {
+    display: none;
+  }
+
+  // === 태블릿 ===
+  @include tablet {
+    .mobile-promotion {
+      display: none !important;
+    }
+
+    .tablet-promotion {
+      display: block;
+
+      .tablet-promotion-list {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .tablet-promo-set {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin-bottom: 0;
+
+        .promo-main {
+          margin-bottom: 18px;
+          border-radius: 14px;
+          overflow: hidden;
+          background: $color-card;
+          position: relative;
+
+          .main-img-box {
+            width: 100%;
+            aspect-ratio: 4/3;
+            position: relative;
+            background: $color-card;
+
+            .main-img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .main-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+            color: $color-white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+
+            .main-title {
+              @include large-font;
+              font-size: 1.35rem;
+              margin-bottom: 6px;
+            }
+
+            .main-subtitle {
+              @include base-font;
+              color: rgba($color-white, 0.94);
+            }
+          }
+        }
+
+        .tablet-side-cards {
+          display: flex;
+          flex-direction: row;
+          gap: 13px;
+
+          .product-card {
+            flex: 1 1 0;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px 0 rgba(60, 90, 170, 0.04);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+
+            .prod-img-wrap {
+              width: 100%;
+              aspect-ratio: 1/1;
+              position: relative;
+              background: $color-card;
+
+              .prod-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .prod-info {
+              padding: 10px 8px 12px 9px;
+
+
+              .prod-name {
+                color: $color-font;
+                @include base-font;
+                margin-bottom: 4px;
+              }
+
+              .prod-price {
+                color: $color-font;
+                @include base-font;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .desktop-promotion {
+      display: none !important;
+    }
+  }
+
+  // === 데스크탑 ===
+  @include desktop {
+    .mobile-promotion,
+    .tablet-promotion {
+      display: none !important;
+    }
+
+    .desktop-promotion {
+      display: block !important;
+
+      .promotion-list {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+      }
+
+      .promo-row {
+        display: flex;
+        gap: 28px;
+        align-items: flex-start;
+        margin-bottom: 0;
+      }
+
+      .promo-main {
+        flex: 0 0 400px;
+        max-width: 444px;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        background: $color-card;
+
+        .main-img-box {
+          width: 100%;
+          aspect-ratio: 5 / 4;
+          min-height: 300px;
+          position: relative;
+          background: $color-card;
+
+          .main-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .main-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 20px;
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+          color: $color-white;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          height: 100%;
+
+          .main-title {
+            @include large-font;
+            color: $color-white;
+            margin-bottom: 6px;
+          }
+
+          .main-subtitle {
+            @include base-font;
+            color: $color-white;
+          }
+        }
+      }
+
+      .promo-side-cards {
+        display: flex;
+        gap: 18px;
+        flex: 1 1 0;
+
+        .product-card {
+          flex: 1 1 0;
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: 0 2px 10px 0 rgba(60, 90, 170, 0.04);
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+
+          .prod-img-wrap {
+            width: 100%;
+            aspect-ratio: 1/1;
+            position: relative;
+            background: $color-card;
+
+            .prod-img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .prod-info {
+            padding: 10px 5px 12px 8px;
+
+            .prod-name {
+              color: $color-font;
+              @include base-font;
+              margin-bottom: 4px;
+            }
+
+            .prod-price {
+              color: $color-font;
+              @include base-font;
+            }
+          }
+        }
+      }
+    }
+  }
+}

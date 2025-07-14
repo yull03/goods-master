@@ -1,0 +1,101 @@
+[
+    {
+        "setID": "mid01",
+        "setTitle": "곰작가 베스트 컬렉션",
+        "setSubtitle": "귀여운 곰으로 일상을 채워보세요",
+        "brand": "곰작가",
+        "setimage": "/images/card-11.jpg",
+        "products": [
+            {
+                "image": "/images/card-4.jpg",
+                "brand": "곰작가",
+                 "name": "귀여운 갈색 곰 카드",
+                 "price": 3500
+            },
+            {
+                "image": "/images/keyring-5.jpg",
+                "brand": "곰작가",
+                "name": "귀여운 곰 키링",
+                "price": 3000
+            },
+            {
+                "image": "/images/keyring-6.jpg",
+                "brand": "곰작가",
+                "name": "곰 키링 1",
+                "price": 3000
+            },
+            {
+                "image": "/images/memo-4.jpg",
+                "brand": "곰작가",
+                "name": "옐로우 베어 메모지",
+                "price": 2800
+            }
+        ]
+    },
+    {
+        "setID": "mid02",
+        "setTitle": "산리오 인기 캐릭터 컬렉션",
+        "setSubtitle": "마이멜로디부터 쿠로미까지 한눈에!",
+        "brand": "Sanrio",
+        "setimage": "/images/keyring-31.jpg",
+        "products": [
+            {
+                "image": "/images/keyring-39.jpg",
+                "brand": "Sanrio",
+                "name": "산리오 헬로 키티 훌라 키스 4인치 하와이 시리즈 플러시",
+                "price": 39000
+            },
+            {
+                "image": "/images/keyring-30.jpg",
+                "brand": "Sanrio",
+                "name":"산리오 헬로 키티 베이비 데빌 마스코트 홀더",
+                "price": 34000
+            },
+            {
+                "image": "/images/keyring-36.jpg",
+                "brand": "Sanrio",
+                "name": "산리오 헬로 키티 미니 마스코트 홀더",
+                "price": 24000
+            },
+            {
+                "image": "/images/living-5.jpg",
+                "brand": "Sanrio",
+                "name":  "24년 신상 산리오 마이멜로디 원터치 다용도 수납함",
+                "price": 4900
+            }
+        ]
+    },
+    {
+        "setID": "mid03",
+        "setTitle": "POP MART 스페셜 키링",
+        "setSubtitle": "개성 있는 캐릭터를 담은 POP MART 키링 모음",
+         "brand": "POP MART",
+        "setimage": "/images/keyring-12.jpg",
+        "products": [
+            {
+                "image": "/images/keyring-13.jpg",
+                "brand": "POP MART",
+                "name": "팝마트 라부부 더 몬스터즈 하이라이트 시리즈 행운 키링 ",
+                "price": 81000
+            },
+            {
+                "image": "/images/keyring-33.jpg",
+                "brand": "POP MART",
+                "name": "팝마트 비키니 바텀 버디즈 윔지컬 플러시 쿨한 물고기",
+                "price": 33000
+            },
+            {
+                "image": "/images/keyring-46.jpg",
+                "brand": "POP MART",
+                "name": "팝마트 라부부 코카콜라 시리즈 신비한 손님 키링",
+                "price": 149000
+            },
+            {
+                "image": "/images/living-16.jpg",
+                "brand": "POP MART",
+                "name": "팝마트 라부부 더 몬스터즈 x 원피스 시리즈 피규어 몽키 D.루피",
+                "price": 40000
+            }
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "산리오 캐릭터 일러스트 배너",
+    "image": "/images/pc-banner01.jpg"
+  },
+  {
+    "id": 2,
+    "name": "독특하고 재미있는 생활용품 일러스트 배너 ",
+    "image": "/images/pc-banner02.png"
+  },
+  {
+    "id": 3,
+    "name": "시원한 할인 일러스트 배너",
+    "image": "/images/pc-banner03.png"
+  },
+  {
+    "id": 4,
+    "name": "재미있는 캐릭터 일러스트 배너",
+    "image": "/images/pc-banner04.jpg"
+  }
+]

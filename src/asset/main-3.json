@@ -1,0 +1,58 @@
+[
+    {
+        "setID": "Bottom01",
+        "setTitle": "마음에 들어요.",
+        "setSubtitle": "포장도 꼼꼼하고 친구도 마음에 든다네요 :)",
+        "setimage": "/images/sticker-52.jpg",
+        "products": [
+            {
+                "brand": "Shueisha",
+                "mainTitle": "하이큐 SD 투명 칼선 스티커 카라스노 B",
+                "price": 3900,
+                "image": "/images/sticker-15.jpg"
+            }
+        ]
+    },
+    {
+        "setID": "Bottom02",
+        "setTitle": "너무 예뻐요!",
+        "setSubtitle": "노트북 꾸미기 좋아요!",
+        "setimage": "/images/sticker-50.jpg",
+        "products": [
+            {
+                "brand": "PEACEMINUSONE",
+                "mainTitle": "피스마이너스원 데이지 스티커 테이프 #1 (3개 세트)",
+                "price": 175000,
+                "image": "/images/sticker-13.jpg"
+            }
+        ]
+    },
+    {
+        "setID": "Bottom03",
+        "setTitle": "넘므 귀엽잖아",
+        "setSubtitle": "LG트윈스 팬이라면 하나씩은 꼭 사세요!",
+        "setimage": "/images/sticker-51.jpg",
+        "products": [
+            {
+                "brand": "LG Twins | 마루는 강쥐",
+                "mainTitle": "LG트윈스 x 마루는강쥐 스티커팩",
+                "price": 9000,
+                "image": "/images/sticker-3.jpg"
+            }
+        ]
+    },
+    {
+        "setID": "Bottom04",
+        "setTitle": "실물이 진짜 예뻐요.",
+        "setSubtitle": "역시 슈프림 감성 포장도 신경써준 거 같아서 좋아요.",
+        "setimage": "/images/keyring-50.jpg",
+        "products": [
+            {
+                "brand": "Supreme",
+                "mainTitle": "슈프림 스컬 벨 키체인 실버 25SS",
+                "price": 78000,
+                "image": "/images/keyring-17.jpg"
+            }
+        ]
+    }
+]

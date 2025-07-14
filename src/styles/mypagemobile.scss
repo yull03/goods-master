@@ -1,0 +1,111 @@
+.mypagemobile-wrap{
+    @include flex-layout(column, center, center);
+    
+    img{
+        width: 100px;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+    }
+
+    .member-wrap{
+        @include flex-layout(column, center, center);
+        border: 1px solid var(--color-gray);
+        width: 350px;
+        height: 95px;
+        gap: 0.5rem;
+        margin: 2rem 0;
+
+        h6{
+            @include base-font;
+
+        }
+
+        .benefit-btn{
+            @include flex-layout(row, center, center);
+            @include bold-font;
+            color: var(--color-sub);
+            background-color: var(--color-btn);
+            width: 150px;
+            height: 30px;
+            border-radius: 30px;
+            transition: transform 0.2s ease;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .allitem-wrap{
+        @include flex-layout(row, center, center);
+        gap: 2rem;
+        margin: 2rem 0;
+        cursor: pointer;
+
+        .item-wrap{
+            @include flex-layout(column, center, center);
+            gap: 0.5rem;
+        }
+
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+
+        p{
+            @include base-font;
+            color: var(--color-black);
+        }
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 140px);
+        grid-gap: 10px;
+        margin: 2rem 0;
+
+        .box{
+            @include flex-layout(column, center, center);
+            width: 100%;
+            aspect-ratio: 1/1;
+            background-color: var(--color-primary);
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none; //드래그 금지
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+
+            &:hover{
+                transform: scale(1.1);
+                background-color: var(--color-btn);
+            }
+
+            .title{
+                @include bold-font;
+                color: var(--color-sub);
+                margin-bottom: 0.5rem;
+            }
+
+            .sub-title{
+                @include bold-font;
+                color: var(--color-sub);
+            }
+        }
+    }
+
+    .logout-btn{
+        width: 400px;
+        height: 55px;
+        padding: 0 1rem;
+        margin: 2rem 0;
+        background-color: var(--color-btn);
+        border-radius: 20px;
+        @include base-font;
+        color: var(--color-sub);
+
+        &:hover{
+            filter: brightness(1.2);
+        }
+    }
+}

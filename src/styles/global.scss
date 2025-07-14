@@ -1,0 +1,25 @@
+//variable
+:root{
+    --color-primary:#6495ED;
+    --color-sub:#DCEEF2;
+    --color-btn:#3759B4;
+    --color-btn:#3759B4;
+    --color-gray:#C2C8D2;
+    --color-black:#222222;
+    --color-dark:#666666;
+    --color-white: #F6F9FF;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; display: block; color: inherit;}
+li{list-style: none;}
+button{cursor: pointer; border: none;}
+html{
+    font-size: 16px;
+    color: var(--color-black);
+    height: 100vh;
+}
+html, body, #root { // React 앱의 경우 #root도 중요
+  height: 100%;
+  min-height: 100vh;
+}
